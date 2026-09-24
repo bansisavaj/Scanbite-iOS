@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #111111;
+    --body: #444444;
+    --muted: #777777;
+    --border: #eeeeee;
+    --link: #111111;
+}
+
+html {
+    background: #ffffff;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+        "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+}
+
+header {
+    margin-bottom: 48px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+.updated {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+section {
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+}
+
+section:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+p {
+    margin: 0;
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 0 36px;
+    padding: 11px 18px;
+    border: 1px solid #111111;
+    border-radius: 10px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.faq {
+    padding: 15px 0;
+    border-top: 1px solid var(--border);
+}
+
+.faq:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.faq summary {
+    color: var(--text);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq summary::after {
+    content: "+";
+    float: right;
+    color: #888888;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faq[open] summary::after {
+    content: "−";
+}
+
+.faq p {
+    margin-top: 9px;
+}
+
+footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: #888888;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 20px 60px;
+    }
+
+    header {
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 24px 0;
+    }
+
+    .button {
+        margin-bottom: 28px;
+    }
+}

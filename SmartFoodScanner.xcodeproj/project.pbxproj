@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001 /* SmartFoodScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101 /* SmartFoodScannerApp.swift */; };
+		002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102 /* ContentView.swift */; };
+		003 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* Product.swift */; };
+		004 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104 /* Nutrition.swift */; };
+		005 /* InsightResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105 /* InsightResult.swift */; };
+		006 /* DietTypeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106 /* DietTypeResult.swift */; };
+		007 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107 /* HomeViewModel.swift */; };
+		008 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* ScannerViewModel.swift */; };
+		009 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* ProductViewModel.swift */; };
+		010 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* HistoryViewModel.swift */; };
+		011 /* OpenFoodFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111 /* OpenFoodFactsService.swift */; };
+		012 /* InsightEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112 /* InsightEngine.swift */; };
+		013 /* DietClassifierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113 /* DietClassifierService.swift */; };
+		014 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114 /* LocationService.swift */; };
+		015 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115 /* NotificationService.swift */; };
+		016 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116 /* HomeView.swift */; };
+		017 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117 /* ScannerView.swift */; };
+		018 /* ProductResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118 /* ProductResultView.swift */; };
+		019 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119 /* EducationView.swift */; };
+		020 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120 /* BarcodeScannerView.swift */; };
+		022 /* HealthSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122 /* HealthSummary.swift */; };
+		023 /* HealthSummaryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123 /* HealthSummaryEngine.swift */; };
+		024 /* FoodDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124 /* FoodDataService.swift */; };
+		025 /* LocalFoodCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125 /* LocalFoodCacheService.swift */; };
+		026 /* IngredientAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126 /* IngredientAnalysis.swift */; };
+		027 /* IngredientAnalysisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127 /* IngredientAnalysisEngine.swift */; };
+		028 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128 /* OCRService.swift */; };
+		029 /* IngredientsScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129 /* IngredientsScannerViewModel.swift */; };
+		030 /* IngredientsScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130 /* IngredientsScannerView.swift */; };
+		031 /* IngredientCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131 /* IngredientCameraView.swift */; };
+		032 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132 /* HistoryView.swift */; };
+		033 /* OnDeviceAIInsightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133 /* OnDeviceAIInsightService.swift */; };
+		034 /* FoodChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134 /* FoodChatMessage.swift */; };
+		035 /* FoodChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135 /* FoodChatService.swift */; };
+		036 /* FoodChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136 /* FoodChatViewModel.swift */; };
+		037 /* FoodChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137 /* FoodChatView.swift */; };
+		038 /* FirebaseSupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138 /* FirebaseSupportService.swift */; };
+		039 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139 /* SettingsView.swift */; };
+		040 /* AppReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140 /* AppReviewService.swift */; };
+		041 /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141 /* AdService.swift */; };
+		042 /* DietPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142 /* DietPreference.swift */; };
+		043 /* BarcodeNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143 /* BarcodeNormalizer.swift */; };
+		044 /* LocalHTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144 /* LocalHTMLView.swift */; };
+		112275872FE0D5810003C721 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 112275862FE0D5810003C721 /* GoogleService-Info.plist */; };
+		1122758A2FE0D6430003C721 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 112275892FE0D6430003C721 /* FirebaseAnalytics */; };
+		1122758C2FE0D6430003C721 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1122758B2FE0D6430003C721 /* FirebaseCrashlytics */; };
+		1122758E2FE0D6430003C721 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 1122758D2FE0D6430003C721 /* FirebaseRemoteConfig */; };
+		115A83552FE91535007A8C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115A83542FE91535007A8C4A /* Assets.xcassets */; };
+		AD00000000000000000000A3 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AD00000000000000000000A2 /* GoogleMobileAds */; };
+		AD00000000000000000000B1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD00000000000000000000B0 /* PrivacyInfo.xcprivacy */; };
+		AD00000000000000000000C1 /* LegalDocs in Resources */ = {isa = PBXBuildFile; fileRef = AD00000000000000000000C0 /* LegalDocs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100 /* SmartFoodScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFoodScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101 /* SmartFoodScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFoodScannerApp.swift; sourceTree = "<group>"; };
+		102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		103 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		104 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		105 /* InsightResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightResult.swift; sourceTree = "<group>"; };
+		106 /* DietTypeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTypeResult.swift; sourceTree = "<group>"; };
+		107 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		108 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		109 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		110 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		111 /* OpenFoodFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsService.swift; sourceTree = "<group>"; };
+		112 /* InsightEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightEngine.swift; sourceTree = "<group>"; };
+		112275862FE0D5810003C721 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		113 /* DietClassifierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietClassifierService.swift; sourceTree = "<group>"; };
+		114 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		115 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		115A83542FE91535007A8C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		116 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		117 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		118 /* ProductResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResultView.swift; sourceTree = "<group>"; };
+		119 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		120 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		122 /* HealthSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSummary.swift; sourceTree = "<group>"; };
+		123 /* HealthSummaryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSummaryEngine.swift; sourceTree = "<group>"; };
+		124 /* FoodDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataService.swift; sourceTree = "<group>"; };
+		125 /* LocalFoodCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFoodCacheService.swift; sourceTree = "<group>"; };
+		126 /* IngredientAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalysis.swift; sourceTree = "<group>"; };
+		127 /* IngredientAnalysisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAnalysisEngine.swift; sourceTree = "<group>"; };
+		128 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		129 /* IngredientsScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsScannerViewModel.swift; sourceTree = "<group>"; };
+		130 /* IngredientsScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsScannerView.swift; sourceTree = "<group>"; };
+		131 /* IngredientCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCameraView.swift; sourceTree = "<group>"; };
+		132 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		133 /* OnDeviceAIInsightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceAIInsightService.swift; sourceTree = "<group>"; };
+		134 /* FoodChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChatMessage.swift; sourceTree = "<group>"; };
+		135 /* FoodChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChatService.swift; sourceTree = "<group>"; };
+		136 /* FoodChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChatViewModel.swift; sourceTree = "<group>"; };
+		137 /* FoodChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodChatView.swift; sourceTree = "<group>"; };
+		138 /* FirebaseSupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSupportService.swift; sourceTree = "<group>"; };
+		139 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		140 /* AppReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewService.swift; sourceTree = "<group>"; };
+		141 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		142 /* DietPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPreference.swift; sourceTree = "<group>"; };
+		143 /* BarcodeNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeNormalizer.swift; sourceTree = "<group>"; };
+		144 /* LocalHTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHTMLView.swift; sourceTree = "<group>"; };
+		AD00000000000000000000B0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AD00000000000000000000C0 /* LegalDocs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LegalDocs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1122758E2FE0D6430003C721 /* FirebaseRemoteConfig in Frameworks */,
+				1122758A2FE0D6430003C721 /* FirebaseAnalytics in Frameworks */,
+				1122758C2FE0D6430003C721 /* FirebaseCrashlytics in Frameworks */,
+				AD00000000000000000000A3 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		300 = {
+			isa = PBXGroup;
+			children = (
+				301 /* SmartFoodScanner */,
+				302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301 /* SmartFoodScanner */ = {
+			isa = PBXGroup;
+			children = (
+				101 /* SmartFoodScannerApp.swift */,
+				102 /* ContentView.swift */,
+				115A83542FE91535007A8C4A /* Assets.xcassets */,
+				303 /* Models */,
+				304 /* ViewModels */,
+				305 /* Services */,
+				306 /* Views */,
+				121 /* Info.plist */,
+				112275862FE0D5810003C721 /* GoogleService-Info.plist */,
+				AD00000000000000000000B0 /* PrivacyInfo.xcprivacy */,
+				AD00000000000000000000C0 /* LegalDocs */,
+			);
+			path = SmartFoodScanner;
+			sourceTree = "<group>";
+		};
+		302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100 /* SmartFoodScanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		303 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				103 /* Product.swift */,
+				104 /* Nutrition.swift */,
+				105 /* InsightResult.swift */,
+				106 /* DietTypeResult.swift */,
+				122 /* HealthSummary.swift */,
+				126 /* IngredientAnalysis.swift */,
+				134 /* FoodChatMessage.swift */,
+				142 /* DietPreference.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		304 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				107 /* HomeViewModel.swift */,
+				108 /* ScannerViewModel.swift */,
+				109 /* ProductViewModel.swift */,
+				110 /* HistoryViewModel.swift */,
+				129 /* IngredientsScannerViewModel.swift */,
+				136 /* FoodChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		305 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				111 /* OpenFoodFactsService.swift */,
+				112 /* InsightEngine.swift */,
+				113 /* DietClassifierService.swift */,
+				114 /* LocationService.swift */,
+				115 /* NotificationService.swift */,
+				123 /* HealthSummaryEngine.swift */,
+				124 /* FoodDataService.swift */,
+				125 /* LocalFoodCacheService.swift */,
+				127 /* IngredientAnalysisEngine.swift */,
+				128 /* OCRService.swift */,
+				133 /* OnDeviceAIInsightService.swift */,
+				135 /* FoodChatService.swift */,
+				138 /* FirebaseSupportService.swift */,
+				140 /* AppReviewService.swift */,
+				141 /* AdService.swift */,
+				143 /* BarcodeNormalizer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		306 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				116 /* HomeView.swift */,
+				117 /* ScannerView.swift */,
+				118 /* ProductResultView.swift */,
+				119 /* EducationView.swift */,
+				120 /* BarcodeScannerView.swift */,
+				130 /* IngredientsScannerView.swift */,
+				131 /* IngredientCameraView.swift */,
+				132 /* HistoryView.swift */,
+				137 /* FoodChatView.swift */,
+				139 /* SettingsView.swift */,
+				144 /* LocalHTMLView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		400 /* SmartFoodScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401 /* Build configuration list for PBXNativeTarget "SmartFoodScanner" */;
+			buildPhases = (
+				402 /* Sources */,
+				200 /* Frameworks */,
+				403 /* Resources */,
+				112275902FE0E7F90003C721 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartFoodScanner;
+			packageProductDependencies = (
+				112275892FE0D6430003C721 /* FirebaseAnalytics */,
+				1122758B2FE0D6430003C721 /* FirebaseCrashlytics */,
+				1122758D2FE0D6430003C721 /* FirebaseRemoteConfig */,
+				AD00000000000000000000A2 /* GoogleMobileAds */,
+			);
+			productName = SmartFoodScanner;
+			productReference = 100 /* SmartFoodScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					400 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 501 /* Build configuration list for PBXProject "SmartFoodScanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 300;
+			packageReferences = (
+				112275882FE0D6430003C721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD00000000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				400 /* SmartFoodScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115A83552FE91535007A8C4A /* Assets.xcassets in Resources */,
+				112275872FE0D5810003C721 /* GoogleService-Info.plist in Resources */,
+				AD00000000000000000000B1 /* PrivacyInfo.xcprivacy in Resources */,
+				AD00000000000000000000C1 /* LegalDocs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		112275902FE0E7F90003C721 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001 /* SmartFoodScannerApp.swift in Sources */,
+				002 /* ContentView.swift in Sources */,
+				003 /* Product.swift in Sources */,
+				004 /* Nutrition.swift in Sources */,
+				005 /* InsightResult.swift in Sources */,
+				006 /* DietTypeResult.swift in Sources */,
+				007 /* HomeViewModel.swift in Sources */,
+				008 /* ScannerViewModel.swift in Sources */,
+				009 /* ProductViewModel.swift in Sources */,
+				010 /* HistoryViewModel.swift in Sources */,
+				011 /* OpenFoodFactsService.swift in Sources */,
+				012 /* InsightEngine.swift in Sources */,
+				013 /* DietClassifierService.swift in Sources */,
+				014 /* LocationService.swift in Sources */,
+				015 /* NotificationService.swift in Sources */,
+				016 /* HomeView.swift in Sources */,
+				017 /* ScannerView.swift in Sources */,
+				018 /* ProductResultView.swift in Sources */,
+				019 /* EducationView.swift in Sources */,
+				020 /* BarcodeScannerView.swift in Sources */,
+				022 /* HealthSummary.swift in Sources */,
+				023 /* HealthSummaryEngine.swift in Sources */,
+				024 /* FoodDataService.swift in Sources */,
+				025 /* LocalFoodCacheService.swift in Sources */,
+				026 /* IngredientAnalysis.swift in Sources */,
+				027 /* IngredientAnalysisEngine.swift in Sources */,
+				028 /* OCRService.swift in Sources */,
+				029 /* IngredientsScannerViewModel.swift in Sources */,
+				030 /* IngredientsScannerView.swift in Sources */,
+				031 /* IngredientCameraView.swift in Sources */,
+				032 /* HistoryView.swift in Sources */,
+				033 /* OnDeviceAIInsightService.swift in Sources */,
+				034 /* FoodChatMessage.swift in Sources */,
+				035 /* FoodChatService.swift in Sources */,
+				036 /* FoodChatViewModel.swift in Sources */,
+				037 /* FoodChatView.swift in Sources */,
+				038 /* FirebaseSupportService.swift in Sources */,
+				039 /* SettingsView.swift in Sources */,
+				044 /* LocalHTMLView.swift in Sources */,
+				040 /* AppReviewService.swift in Sources */,
+				041 /* AdService.swift in Sources */,
+				042 /* DietPreference.swift in Sources */,
+				043 /* BarcodeNormalizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K665SRPBVS;
+				GAD_APPLICATION_ID = "ca-app-pub-3940256099942544~1458002511";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartFoodScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Food Scanner";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.smartfoodscanner.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K665SRPBVS;
+				GAD_APPLICATION_ID = "ca-app-pub-REPLACE-WITH-YOUR-REAL-ID~REPLACE";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartFoodScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Food Scanner";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.smartfoodscanner.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		401 /* Build configuration list for PBXNativeTarget "SmartFoodScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602 /* Debug */,
+				603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501 /* Build configuration list for PBXProject "SmartFoodScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600 /* Debug */,
+				601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		112275882FE0D6430003C721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+		AD00000000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		112275892FE0D6430003C721 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 112275882FE0D6430003C721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1122758B2FE0D6430003C721 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 112275882FE0D6430003C721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		1122758D2FE0D6430003C721 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 112275882FE0D6430003C721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		AD00000000000000000000A2 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD00000000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 500 /* Project object */;
+}
